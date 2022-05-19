@@ -1,0 +1,9 @@
+.product img {
+    border-radius: 10px;
+}
+
+.product {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
