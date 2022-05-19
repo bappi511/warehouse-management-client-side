@@ -36,7 +36,7 @@ const ProductCategories = () => {
         ]
     };
     return (
-        <div className='mt-4'>
+        <div className='mt-5 mb-5'>
             <div className="container">
                 <Slider  {...settings_1}>
                     <div>

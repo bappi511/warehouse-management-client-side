@@ -1,0 +1,10 @@
+.z-index {
+    z-index: 1;
+    position: relative;
+}
+
+.visible {
+    z-index: 1;
+    bottom: 28%;
+    right: 45%;
+}
