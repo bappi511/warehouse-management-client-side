@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
     const date = (new Date().getFullYear())
     return (
-        <div className='bg-dark text-white'>
+        <div className='bg-dark mt-4 text-white'>
             <div className="container">
                 <div className="row gy-4 gx-5">
                     <div className="col-lg-4 col-md-6">
@@ -28,7 +28,7 @@ const Footer = () => {
                             Sign up for our newsletter today.</p>
                         <form action="#">
                             <div className="input-group mb-3">
-                                <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                <input className="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2" />
                                 <button className="btn btn-primary" id="button-addon2" type="button"><i className="fas fa-paper-plane"></i></button>
                             </div>
                         </form>
