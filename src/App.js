@@ -6,6 +6,7 @@ import Footer from './pages/Shared/Footer/Footer';
 import Home from './pages/Home/Home/Home';
 import NotFound from './pages/Shared/NotFound/NotFound';
 import ProductInfo from './pages/ProductInfo/ProductInfo';
+import Delivered from './pages/Delivered/Delivered';
 
 function App() {
   return (

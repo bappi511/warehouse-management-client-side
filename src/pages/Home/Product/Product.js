@@ -14,6 +14,7 @@ const Product = ({ product }) => {
                 <img className='w-100' src={img} alt="" />
                 <h4 className='mt-2'>{name}</h4>
                 <p>Price: ${price}</p>
+                <p>supplier:{supplier}</p>
                 <p><small>{description}</small></p>
                 <button onClick={() => navigateToProductDetail(_id)} className="btn btn-primary">Manage</button>
             </div>

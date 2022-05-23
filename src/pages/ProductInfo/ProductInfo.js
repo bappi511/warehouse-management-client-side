@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import useUpdateProduct from '../hooks/useUpdateProduct';
 
 const ProductInfo = () => {
     const { productId } = useParams();
-    const [product, setProduct] = useState({});
-    useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setProduct(data))
-    }, [])
-    const handleUpdateItem = event => {
-        event.preventDefault();
-        const quantity = event.target.quantity.value;
+    const [product] = useUpdateProduct({});
 
+    const handleUpdateItem = event => {
+
+        event.preventDefault();
+        const getQuantityValue = JSON.parse(event.target.quantity.value);
+        const quantity = product.quantity + getQuantityValue;
         const updatedItem = { quantity };
 
         // send data to the server;
@@ -31,6 +28,25 @@ const ProductInfo = () => {
                 alert('quantity added succsessfuly')
                 console.log('success', data);
                 event.target.reset();
+            })
+    }
+    const handleQuantity = () => {
+        const quantity = JSON.parse(product.quantity - 1);
+        const updatedItem = { quantity };
+        // send data to the server;
+        const url = `http://localhost:5000/product/${productId}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                "content-type": 'application/json'
+            },
+            body: JSON.stringify(updatedItem)
+
+        })
+            .then(res => res.json())
+            .then(data => {
+                alert('Delivered succsessfuly')
+
             })
     }
     return (
@@ -51,12 +67,13 @@ const ProductInfo = () => {
                         <input className='w-100 py-1' type="text" name='quantity' placeholder='quantity' /> <br />
                         <input className='btn btn-info w-100 mt-2 ' type="submit" value="Restock" />
                     </form>
+                    <div className='mt-3'>
+
+                        <button className='btn btn-primary w-100' onClick={() => handleQuantity(product.quantity)}>Delivered</button>
+
+                    </div>
                 </div>
-                <div className='text-center'>
-                    <Link to='/checkout'>
-                        <button className='btn btn-primary'>Procced Checkout</button>
-                    </Link>
-                </div>
+
             </div>
         </div>
     );
