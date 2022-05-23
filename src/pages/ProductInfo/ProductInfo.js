@@ -51,7 +51,7 @@ const ProductInfo = () => {
     }
     return (
         <div className="container">
-            <div className='border border-danger p-4 mb-5  row'>
+            <div className='border p-4 mb-5  row'>
                 <div className='col-md-6'>
                     <img className='w-75' src={product.img} alt="" />
                     <h5><small> {product.description}</small> </h5>

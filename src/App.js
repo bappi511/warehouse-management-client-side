@@ -7,6 +7,7 @@ import Home from './pages/Home/Home/Home';
 import NotFound from './pages/Shared/NotFound/NotFound';
 import ProductInfo from './pages/ProductInfo/ProductInfo';
 import Delivered from './pages/Delivered/Delivered';
+import AddProduct from './pages/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/product/:productId' element={<ProductInfo></ProductInfo>}></Route>
+        <Route path='/addproduct' element={<AddProduct />} />
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
