@@ -45,7 +45,7 @@ const ManageProduct = () => {
                                         <td className='px-6 py-4'>${product.price}</td>
                                         <td className='px-6 py-4'>{product.quantity}</td>
                                         <td className='px-6 py-4'>{product.supplier}</td>
-                                        <td className='px-6 py-4'><button className='btn bg-danger py-1 text-light'>delete</button></td>
+                                        <td className='px-6 py-4'><button onClick={() => handleProductDelete(product._id)} className='btn bg-danger py-1 text-light'>Delete</button></td>
                                     </tr>
                                 )
                             })
