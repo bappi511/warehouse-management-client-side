@@ -23,11 +23,11 @@ const AddProduct = () => {
             <h2 className='text-center mb-4'>Please Add a Product</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
-                <input className='mb-2' placeholder='Supplier' type="name" {...register("Supplier", { required: true, maxLength: 20 })} />
+                <input className='mb-2' placeholder='Supplier' type="name" {...register("supplier", { required: true, maxLength: 20 })} />
 
                 <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
 
-                <input className='mb-2' placeholder='Quantity' type="number" {...register("Quantity")} />
+                <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
 
                 <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
                 <textarea className='mb-2' placeholder='Descriptions' {...register("description")} />

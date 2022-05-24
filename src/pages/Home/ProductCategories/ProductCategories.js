@@ -14,6 +14,8 @@ const ProductCategories = () => {
         centerMode: true,
         centerPadding: "60px",
         slidesToShow: 3,
+        dots: true,
+        infinite: true,
         responsive: [
             {
                 breakpoint: 768,

@@ -8,6 +8,7 @@ import NotFound from './pages/Shared/NotFound/NotFound';
 import ProductInfo from './pages/ProductInfo/ProductInfo';
 import Delivered from './pages/Delivered/Delivered';
 import AddProduct from './pages/AddProduct/AddProduct';
+import ManageProduct from './pages/ManageProduct/ManageProduct';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/product/:productId' element={<ProductInfo></ProductInfo>}></Route>
         <Route path='/addproduct' element={<AddProduct />} />
+        <Route path='/manageproduct' element={<ManageProduct />} />
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

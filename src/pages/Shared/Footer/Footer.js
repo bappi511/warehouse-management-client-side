@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className='bg-dark mt-4 text-white'>
             <div className="container">
-                <div className="row gy-4 gx-5">
+                <div className="row gy-2 gx-4">
                     <div className="col-lg-4 col-md-6">
                         <h5 className="h1 text-white">FB.</h5>
                         <p className="small text-muted">We pride ourselves on running a business with an unprecedented after-sales service which is the envy of many other retailers.</p>
