@@ -8,7 +8,7 @@ const ManageProduct = () => {
 
         const procced = window.confirm('Are you sure?');
         if (procced) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://polar-coast-97656.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

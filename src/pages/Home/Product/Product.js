@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 import "./Product.css";
 const Product = ({ product }) => {
     const { _id, name, price, img, description, supplier, quantity } = product;

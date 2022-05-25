@@ -18,19 +18,20 @@ const RequireAuth = ({ children }) => {
     }
 
     if (user.providerData[0]?.providerId === 'password' && !user.emailVerified) {
-        return <div className='text-center mt-5'>
-            <h3 className='text-danger'>Your Email is not verified!!</h3>
-            <h5 className='text-success'> Please Verify your email address</h5>
-            <button
-                className='btn btn-primary'
-                onClick={async () => {
-                    await sendEmailVerification();
-                    toast('Sent email');
-                }}
-            >
-                Send Verification Email Again
-            </button>
-            <ToastContainer></ToastContainer>
+        return <div className='container'>
+            <div className='text-center mt-5 w-50 mx-auto shadow p-5'>
+                <h5 className='text-danger mb-4'> Please Verify your email address !!</h5>
+                <button
+                    className='btn btn-primary mb-4'
+                    onClick={async () => {
+                        await sendEmailVerification();
+                        toast('Sent email');
+                    }}
+                >
+                    Send Verification Request
+                </button>
+                <ToastContainer></ToastContainer>
+            </div>
         </div>
     }
 

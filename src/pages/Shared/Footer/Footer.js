@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row gy-2 gx-4">
                     <div className="col-lg-4 col-md-6">
-                        <h5 className="h1 text-white">FB.</h5>
+                        <h4 className="text-white">Electronics Warehouse.</h4>
                         <p className="small text-muted">We pride ourselves on running a business with an unprecedented after-sales service which is the envy of many other retailers.</p>
 
                     </div>

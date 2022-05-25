@@ -6,7 +6,7 @@ const useUpdateProduct = () => {
     const { productId } = useParams();
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://polar-coast-97656.herokuapp.com/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))

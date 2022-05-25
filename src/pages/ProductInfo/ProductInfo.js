@@ -14,7 +14,7 @@ const ProductInfo = () => {
         const updatedItem = { quantity };
 
         // send data to the server;
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://polar-coast-97656.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -34,7 +34,7 @@ const ProductInfo = () => {
         const quantity = JSON.parse(product.quantity - 1);
         const updatedItem = { quantity };
         // send data to the server;
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://polar-coast-97656.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
