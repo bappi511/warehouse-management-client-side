@@ -11,6 +11,8 @@ import Login from './pages/Authentications/Login/Login';
 import { ToastContainer } from 'react-toastify';
 import Register from './pages/Authentications/Register/Register';
 import RequireAuth from './pages/Authentications/RequireAuth/RequireAuth';
+import Blog from './pages/Blog/Blog';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         } />
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>} />
+        <Route path='blog' element={<Blog></Blog>} />
+        <Route path='blogs' element={<Blogs></Blogs>} />
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
