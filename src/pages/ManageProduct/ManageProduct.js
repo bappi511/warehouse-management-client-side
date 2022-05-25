@@ -39,7 +39,7 @@ const ManageProduct = () => {
                         {
                             products.map(product => {
                                 return (
-                                    <tr>
+                                    <tr key={product._id}>
                                         <td style={{ width: '15%' }}><img style={{ width: '55%' }} src={product.img} alt="" /></td>
                                         <td className='px-6 py-4'>{product.name}</td>
                                         <td className='px-6 py-4'>${product.price}</td>
