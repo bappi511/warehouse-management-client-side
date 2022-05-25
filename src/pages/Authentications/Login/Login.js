@@ -90,7 +90,7 @@ const Login = () => {
                     {/* Register buttons */}
                     <div className="text-center">
                         <p>Not a member? <Link to='/register' onClick={navigateRegister} className='text-primary text-decoration-none'>Register</Link></p>
-                        <p>or sign up with:</p>
+                        <p>or sign in with:</p>
                         <SocialLogin></SocialLogin>
                     </div>
                 </form>

@@ -46,7 +46,7 @@ const Register = () => {
     return (
         <div className='container'>
             <div style={{ width: '45%' }} className=' mx-auto  mb-2'>
-                <h4 className='text-info text-center mb-4 mt-4'>Please Login Here !!</h4>
+                <h4 className='text-info text-center mb-4 mt-4'>Please Register Here !!</h4>
                 <form onSubmit={handleRegister}>
                     {/*  Email input  */}
                     <div className="form-outline mb-2">

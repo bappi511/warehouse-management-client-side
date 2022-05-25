@@ -20,9 +20,13 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto nav_link">
                         <Nav.Link as={Link} to="/"> Home</Nav.Link>
-                        <Nav.Link as={Link} to="/myItem">My Item</Nav.Link>
-                        <Nav.Link as={Link} to="/addproduct">Add Item</Nav.Link>
-                        <Nav.Link as={Link} to="manageproduct">Manage Item</Nav.Link>
+                        {
+                            user && <>
+                                <Nav.Link as={Link} to="/myItem">My Item</Nav.Link>
+                                <Nav.Link as={Link} to="/addproduct">Add Item</Nav.Link>
+                                <Nav.Link as={Link} to="manageproduct">Manage Item</Nav.Link>
+                            </>
+                        }
                         <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                         {
                             user ? <Nav.Link onClick={handleLogout}>
