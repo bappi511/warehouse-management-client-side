@@ -1,6 +1,8 @@
 # Electronics Warehouse React App
 
-Live Site Link: [Electronics Warehouse](https://electronics-warehouse-d0803.web.app).
+### Live Site Link: [Electronics Warehouse](https://electronics-warehouse-d0803.web.app).
+
+### server side git link: [Electronics Warehouse server](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-bappi511)
 
 - slick-carousel.
 - Created custom hook.
