@@ -1,6 +1,6 @@
 # Electronics Warehouse React App
 
-Live Site Link: [Electronics Warehouse] https://electronics-warehouse-d0803.web.app).
+Live Site Link: [Electronics Warehouse](https://electronics-warehouse-d0803.web.app).
 
 - slick-carousel.
 - Created custom hook.
@@ -14,4 +14,4 @@ Live Site Link: [Electronics Warehouse] https://electronics-warehouse-d0803.web.
 - Requere Auth.
 
 
-### This is a warehouse type site called electronics warehouse. [Electronics Warehouse]https://electronics-warehouse-d0803.web.app) 
+### This is a warehouse type site called electronics warehouse. [Electronics Warehouse](https://electronics-warehouse-d0803.web.app) 
