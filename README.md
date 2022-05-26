@@ -1,6 +1,6 @@
 # Electronics Warehouse React App
 
-Live Site Link: [Electronics Warehouse]https://electronics-warehouse-d0803.web.app).
+Live Site Link: [Electronics Warehouse] https://electronics-warehouse-d0803.web.app).
 
 - slick-carousel.
 - Created custom hook.
